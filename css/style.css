@@ -1,0 +1,397 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:#35424a;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background: #e2e2ff;
+}
+
+.fixed{
+    position:fixed !important;
+    z-index: 9999;
+    width: 100%;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    background: #000059;
+    color: white;    
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+header a:hover{
+    color: rgb(0, 153, 255);
+}
+
+
+.brand{
+    display: inline;
+}
+.brand h1{
+    float:left;
+}
+.toggle{
+    text-align: right;
+    font-size: 20px;
+    display: none;
+    margin-top: 20px;
+}
+
+nav{
+    width: 80%;
+    float: right;
+    margin-top: 15px;
+}
+
+nav ul{
+    width: 80%;
+}
+
+nav ul li{
+    float: right;
+    padding: 0 20px 0 20px;  
+    display: inline-block;
+}
+
+.highlight, .current a{
+    color: rgb(0, 153, 255);
+    font-weight: bold;
+}
+
+#showcase{
+    min-height: 720px;
+    background: url(../images/pozadina.jpg);
+    text-align: center;
+    color: rgb(0, 153, 255);  
+}
+
+
+#showcase h1{
+    margin-top: 300px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #c2ddee;
+    opacity: 0.8;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+
+.button_1{
+    height: 38px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: rgb(0, 153, 255);
+    color: white;
+    border: none;
+}
+
+#boxes{
+    margin-top: 15px;
+    
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+}
+
+#boxes .box img{
+    width: 90px;
+}
+
+footer{
+    padding-top: 10px;
+    background-color:#000059;
+    color: white;
+    text-align: center;
+}
+footer p {
+    margin-left:65px;
+    padding-bottom: 20px;
+}
+
+footer img{
+    margin: auto;
+    width: 15%;
+    height:15%;
+}
+
+footer .dim{
+    float: left;
+}
+
+
+
+#f{
+    background-color: #c2ddee;
+    opacity: 0.8;
+    float: left;
+    margin: 10px;
+    padding:20px;
+    border-left-style: solid;
+    border-color: rgb(0, 153, 255);
+}
+#f label{
+    font-size: 20px;
+    color: #35424a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#f input{
+    width:200px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#f .rad{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    padding: 10px;
+    font-style: #35424e;
+    font-size: 16px;
+}
+
+i{
+    margin: 10px;
+}
+
+.button_2{
+    height: 50px;
+    width: 200px;
+    background: rgb(0, 153, 255);
+    color: #f4f4f4;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.reg h3{
+    
+    color:rgb(0, 153, 255) ;
+    margin-left: 7px;
+    font-size: 20pt;
+
+}
+
+.yt{
+    
+    float: right;
+    width:60%;
+    border: solid rgb(0, 153, 255) ;
+    border-radius: 20px;
+    
+}
+
+.reg{
+    background: url(../images/pozadina.jpg);
+
+}
+
+.reg h2{
+    
+    opacity: 0.8;
+    float: right;
+    font-size: 35px;
+    margin-right: 150px;
+    color: rgb(0, 153, 255);
+}
+
+
+
+.pitanje {
+    background-color: rgb(0, 153, 255);
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border-radius: 20px;
+    margin-top: 10px;
+
+    
+  }
+
+
+    .pitanje:hover {
+    background-color: #000059;
+  }
+  
+  .odg {
+    padding: 0 20px;
+    font-size: 19px;
+    background-color: #8080ff;
+    max-height: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #kontakti{
+    margin-top: 15px;
+    
+}
+.kontakt {
+    font-size: 15px;
+}
+#kontakti .kontakt{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+}
+
+#mape{
+    margin-top: 15px;
+    
+}
+
+#mape .mapa{
+    float: left;
+    text-align: center;
+    width: 50%;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .brand{
+        display: inline;
+        float:left;
+    }
+   .brand h1{
+       font-size: 20px;
+   }
+    nav{
+        float: right;
+    }
+    nav ul{
+        display: inline;
+    }
+
+    #boxes .box{
+        padding: 5px;
+    }
+
+    #kontakti .kontakt{
+        padding: 5px;
+    }
+
+    #mape .mapa{
+        padding: 5px;
+        text-align: center;
+        float:none;
+        width: 100%;
+    }
+
+    .yt{
+        float: none;
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+    }
+    
+
+}
+ 
+
+
+@media only screen and (max-width: 768px) {
+    .toggle{
+        display: block;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .toggle:hover{
+        color:rgb(0, 153, 255);
+    }
+
+    nav{
+        margin-top:0px;
+    }
+    nav ul{
+        float:center;
+        width:100%;
+        display: none;
+    }
+
+    nav ul li{    
+        float:center;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    
+     #boxes .box{
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+
+    #kontakti .kontakt{
+        text-align: center;
+        float: none;
+        width: 100%;
+
+    }
+
+    #mape .mapa{
+        text-align: center;
+        float: none;
+        width: 100%;
+        margin:10px
+    }
+    
+    .f{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        border-left-style: solid;
+        border-color: rgb(0, 153, 255);
+    }
+
+    .reg{
+        padding-bottom: 10px;
+        background: url(../images/pozadina.jpg) -300px -50px;
+    }
+    
+    .reg h2{
+        text-align: center;
+        font-size: 25px;
+        background-color: transparent;
+    }
+
+    .reg h3{
+        text-align: center;
+        font-size: 25px;
+        background-color: transparent;
+    }
+
+    #showcase{
+        background: url(../images/pozadina.jpg) -300px -50px;
+    }
+
+    
+}

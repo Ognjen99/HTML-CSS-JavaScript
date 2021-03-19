@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Povoljne i kvalitetne obuke">
+    <meta name="author" content="Dev Team">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DevTeam | Početna</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container"> 
+            <div class="brand">
+                <h1><span class="highlight">Dev</span>Team</h1>
+            </div>
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="check-class">
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="obuka.html">Obuke</a></li>
+                    <li><a href="prijava.html">Prijava</a></li>
+                    <li class="current"><a href="index.html">Početna</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1 id="timer"></h1>
+        </div>
+    </section>
+
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="images/slika.png">
+                <h3>Software development</h3>
+                <p>
+                    Zbog velike primene softvera u poslovnom i privatnom okruženju, profesija softer developera postaje jedna od najatraktivnijih na današnjem tržištu rada. Koristeći znanja koja steknete na programu Software Development moći ćete da razvijete karijeru u svakoj firmi ili kompaniji.
+                </p>
+            </div>
+
+            <div class="box">
+                    <img src="images/slika2.png">
+                    <h3>Web development</h3>
+                    <p>
+                        Na Web Design programu naučićete načine izrade i postavljanja web sajtova. polaznici će se upoznati sa osnovama HTML jezika, CSS stilovima, JavaScriptom, ali i najmodernijim tehnikama HTML5 animacije i prikaza sadržaja, uz optimizaciju responsive dizajna za računare, tablete, telefone.
+                    </p>
+            </div>
+
+            <div class="box">
+                    <img src="images/slika3.png">
+                    <h3>System administrator</h3>
+                    <p>
+                        Steći ćete znanja iz oblasti instalacije, konfiguracije i licenciranja Windows operativnog sistema. Uz to, savladaćete napredno umrežavanje, konfiguraciju sigurnosti za korisničke naloge, konfiguraciju mrežne sigurnosti, konfiguracija za rad u mobilnom okruženju i slično.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>DevTeam - FON &copy; 2021</p><br><Br>
+        <img src="images/kapica.png" alt="">
+        
+    </footer>
+
+    <script>
+        (function( $ ){     
+   var navOffset = jQuery("header").offset().top; 
+   jQuery(window).scroll(function() {
+       var scrollPos = jQuery(window).scrollTop();
+        if (scrollPos >= navOffset) {
+            jQuery("header").addClass("fixed");
+        } else {
+            jQuery("header").removeClass("fixed");
+        }
+    });
+    })(jQuery);
+    </script>
+
+    <script src="./js/meniFunkcija.js" charset="utf-8"></script>
+    <script src="./js/resizeFunkcija.js" charset="utf-8"></script>
+    <script src="./js/tajmer.js" charset="utf-8"></script>
+</body>
+</html>

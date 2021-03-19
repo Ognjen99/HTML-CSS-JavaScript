@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Povoljne i kvalitetne obuke">
+    <meta name="author" content="Dev Team">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DevTeam | Prijava</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="brand">
+                <h1><span class="highlight">Dev</span>Team</h1>
+            </div>
+
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav>
+                <ul id="check-class">
+                    <li ><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="obuka.html">Obuke</a></li>
+                    <li class="current" ><a href="prijava.html">Prijava</a></li>
+                    <li ><a href="index.html">Početna</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="reg">
+        <div class="container">
+            <h3>Zainteresovan/a si? <br>Prijavi se besplatno!</h3>
+            <form id="f" onsubmit="return validacija()" action="#">
+                <label>Ime i prezime:</label><br>
+                <input type="text" placeholder="Unesite Vaše ime i prezime" id="ime"><br>
+                <label>Datum rođenja:</label><br>
+                <input type="date" placeholder="Unesite Vaš datum rođenja"><br>
+                <label>E-mail:</label><br>
+                <input type="email" placeholder="Unesite Vašu email adresu" id="email"><br>
+                <label>Pol:</label><br>
+                <input class="rad" type="radio" name="gender" checked> Muški<br>
+                <input class="rad" type="radio" name="gender"> Ženski<br>
+                <label>Prijavljujem se za kurs:</label><br>
+                <input class="rad" type="checkbox" name="smer">Programiranje<br>
+                <input class="rad" type="checkbox" name="smer">Dizajn & multimedija<br>
+                <input class="rad" type="checkbox" name="smer">Administracija mreža<br>
+                <input class="rad" type="checkbox" name="smer">IT poslovanje<br>
+                <input class="rad" type="checkbox" name="smer">3D dizajn & CAD<br>
+                <input class="rad" type="checkbox" name="smer">Razvoj mobilnih aplikacija<br><br>
+                <button type="submit" class="button_2">Pošalji</button>
+            </form>
+            <h2>Zbog čega su važni programeri?</h2>
+            <video class="yt" src="images/application.mp4" controls poster="images/tutorial.jpg"></video>
+            
+        </div>
+    </section>
+
+   
+
+    <footer>
+        <p>DevTeam - FON &copy; 2021</p>
+    </footer>
+    <script src="./js/meniFunkcija.js" charset="utf-8"></script>
+    <script src="./js/validacijaFunkcija.js" charset="utf-8"></script>
+    <script src="./js/tajmer.js" charset="utf-8"></script>
+</body>
+</html>
